@@ -23,12 +23,11 @@ import sys
 
 N = int(raw_input().strip())
 
-if N % 2 != 0:
-    print "Weird"
+if N % 2:
+    print("Weird")
+elif 2 <= N <= 5:
+    print("Not Weird")
+elif 6 <= N <= 20:
+    print("Weird")
 else:
-    if N >= 2 and N <= 5:
-        print "Not Weird"
-    elif N >= 6 and N <= 20:
-        print "Weird"
-    elif N > 20:
-        print "Not Weird"
+    print("Not Weird")
